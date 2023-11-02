@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    <form id="miFormulario">
+        <label for="id">ID:</label>
+        <input type="text" id="id" name="id" required>
+    
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+    
+        <label for="descripcion">Descripción:</label>
+        <textarea id="descripcion" name="descripcion" required></textarea>
+    
+        <label for="tiempo">Tiempo:</label>
+        <input type="text" id="tiempo" name="tiempo" required>
+    
+        <label for="imagen">Imagen:</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*" required>
+    
+        <label for="responsable">Responsable:</label>
+        <input type="text" id="responsable" name="responsable" required>
+    
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado">
+          <option value="Pendiente">Pendiente</option>
+          <option value="En Proceso">En Proceso</option>
+          <option value="En Testing">En Testing</option>
+          <option value="Completada">Completada</option>
+        </select>
+    
+        <button type="button" onclick="capturarDatos()">Guardar</button>
+      </form>
+
+      <script src="Ejercicio1.js"></script>
+</body>
+</html>
